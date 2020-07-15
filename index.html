@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google News</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light" name="navbar">
+            <a class="navbar-brand ml-sm-3">ABC News</a>
+            <form class="form-inline mr-md-3">
+                <input id="inputSearch" class="form-control mr-sm-2" type="text" placeholder="Search"
+                    aria-label="Search">
+                <i id="btnSeach" class="fas fa-search" onclick="searchKeyWord()"></i>
+                <!-- <input class="btn btn-outline-success my-2 my-sm-0" type="text" onclick="searchKeyWord()"></input> -->
+            </form>
+        </nav>
+    </div>
+
+    <section>
+        <div class="form-row col-md-12 main-section">
+            <div id="left-menu" class="form-group col-md-2">
+                <input class="left-menu" type="submit" value="Hot News" onclick="searchCatelogy(this.name)">
+                <input class="left-menu" type="submit" name="business" value="Business"
+                    onclick="searchCatelogy(this.name)">
+                <input class="left-menu" type="submit" name="entertainment" value="Entertainment"
+                    onclick="searchCatelogy(this.name)">
+                <input class="left-menu" type="submit" name="general" value="General"
+                    onclick="searchCatelogy(this.name)">
+                <input class="left-menu" type="submit" name="health" value="Health" onclick="searchCatelogy(this.name)">
+                <input class="left-menu" type="submit" name="science" value="Science"
+                    onclick="searchCatelogy(this.name)">
+                <input class="left-menu" type="submit" name="sports" value="Sports" onclick="searchCatelogy(this.name)">
+                <input class="left-menu" type="submit" name="technology" value="Technology"
+                    onclick="searchCatelogy(this.name)">
+            </div>
+
+            <div id="listNewsArea" class="form-group col-md-8">
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title"><a href="#">Card title</a></h5>
+                                <p class="card-text"><i class="fas fa-pen-fancy"></i><small
+                                        class="text-muted">Author</small></p>
+                                <p class="card-text"><i class="fas fa-newspaper"></i><a href="#">This is a wider card
+                                        with supporting text below as a
+                                        natural
+                                        lead-in to additional content. This content is a little bit longer.</a></p>
+                                <p class="card-text"><i class="far fa-clock"></i><small class="text-muted">3 mins
+                                        ago</small></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="https://media4.s-nbcnews.com/j/newscms/2019_01/2705191/nbc-social-default_b6fa4fef0d31ca7e8bc7ff6d117ca9f4.nbcnews-fp-1200-630.png"
+                                class="card-img" alt="...">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-menu" class="form-group col-md-2"></div>
+        </div>
+    </section>
+    <section>
+        <div class="row col-md-12 footer justify-content-around">
+            <a href="#navbar"><i class="fas fa-arrow-up"></i></a>
+            <!-- <div class="col-md-10"> -->
+            <input id="btnLoad" type="submit" value="Load More" onclick="loadMore()">
+            <!-- </div> -->
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+</body>
+
+</html>

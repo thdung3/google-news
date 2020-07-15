@@ -1,0 +1,84 @@
+.border-red{
+    border: 1px solid red;
+}
+
+.main-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.left-menu{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    outline: none;
+    margin-bottom: 10px;
+    color: #426e86;
+    font-weight: 500;
+}
+.left-menu:hover{
+    border: 2px solid #f9ba32;
+}
+
+.left-menu:focus{
+    background: #f9ba32;
+}
+
+nav {
+    background: #f9ba32 !important;
+}
+
+nav a{
+    font-weight: 700;
+}
+
+nav i{
+    font-size: 25px;
+    color: #2f3131;
+}
+nav i:hover {
+    cursor: pointer;
+}
+
+nav input:focus {
+    outline: none;
+}
+
+nav .navbar-brand:hover{
+    cursor: pointer;
+}
+
+.card-body p a{
+    color: #2f3131;
+}
+.card-body h5 a{
+    color: #426e86;
+}
+
+.card-body p i{
+    margin-right: 10px;
+}
+
+.footer { 
+    margin-bottom:30px;
+}
+.footer a{
+    color: #f9ba32;
+}
+.footer a:hover{
+    color: #f9ba32;
+    cursor: pointer;
+}
+
+#btnLoad{
+    background: none;
+    border: 2px solid #f9ba32;
+    outline: none;
+}
+
+#btnLoad:hover{
+    background: #f9ba32;
+}
+
+
