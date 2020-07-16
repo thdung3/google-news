@@ -19,10 +19,12 @@
 }
 .left-menu:hover{
     border: 2px solid #f9ba32;
+    color: #f9ba32
 }
 
 .left-menu:focus{
     background: #f9ba32;
+    color: #426e86;
 }
 
 nav {
@@ -52,12 +54,24 @@ nav .navbar-brand:hover{
 .card-body p a{
     color: #2f3131;
 }
+.card-body p a:hover{
+    color: #f9ba32;
+}
 .card-body h5 a{
-    color: #426e86;
+    color: #f9ba32;
+}
+.card-body h5 a:hover{
+    color: #f9ba32;
 }
 
 .card-body p i{
     margin-right: 10px;
+    /* color: #426e86; */
+    color: #f9ba32;
+}
+
+#listNewsArea { 
+    padding-right: 50px;
 }
 
 .footer { 
@@ -74,11 +88,32 @@ nav .navbar-brand:hover{
 #btnLoad{
     background: none;
     border: 2px solid #f9ba32;
+    color: #f9ba32;
     outline: none;
 }
 
 #btnLoad:hover{
     background: #f9ba32;
+    color: #426e86;
+}
+
+#sources-item{ 
+    display: flex;
+    flex-direction: column;
+}
+
+#right-menu h3{
+    color: #426e86;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+#right-menu span {
+    color: #426e86;    
+}
+#right-menu span:hover {
+    color: #f9ba32;
+    font-style: italic; 
 }
 
 
